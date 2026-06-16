@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta name="google-site-verification" content="51tN3HgaWn8ttDIVi53OXCO-K-_-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        /* Google jaisa clean look dene ke liye CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+            background-color: white;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+            font-size: 14px;
+        }
+        header a {
+            color: #404040;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Search Area */
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+            margin-top: -50px; /* Thoda upar shift karne ke liye */
+        }
+
+        /* Logo Ka Style */
+        .logo {
+            font-size: 90px;
+            font-weight: bold;
+            font-family: 'Product Sans', Arial, sans-serif;
+            letter-spacing: -2px;
+            margin-bottom: 30px;
+            user-select: none;
+        }
+
+        /* Google jaisa multi-color effect tumhare naam par */
+        .blue { color: #4285F4; }
+        .red { color: #EA4335; }
+        .yellow { color: #FBBC05; }
+        .green { color: #34A853; }
+
+        /* Search Box */
+        .search-box-wrapper {
+            width: 100%;
+            max-width: 580px;
+            position: relative;
+        }
+        .search-box {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .search-box:hover, .search-box:focus {
+            box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+        /* Buttons */
+        .buttons-container {
+            margin-top: 25px;
+        }
+        .btn {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            border: 1px solid #dadce0;
+            color: #202124;
+            background-color: #f8f9fa;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f2f2f2;
+            color: #70757a;
+            font-size: 14px;
+        }
+        .footer-top {
+            padding: 15px 20px;
+            border-bottom: 1px solid #dadce0;
+        }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+        .footer-bottom a {
+            color: #70757a;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Links -->
+    <header>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="search-container">
+        <!-- Google Style Logo--!>
+        <div class="logo">
+            <span class="blue">A</span>
+            <span class="red">a</span>
+            <span class="yellow">y</span>
+            <span class="blue">u</span>
+            <span class="green">B</span>
+            <span class="red">a</span>
+            <span class="yellow">b</span>
+            <span class="green">a</span>
+        </div>
+
+        <!-- Search Bar Form -->
+        <form action="https://www.google.com/search" method="GET" target="_blank" class="search-box-wrapper">
+            <input type="text" name="q" class="search-box" autocomplete="off" placeholder="Search anything...">
+            
+            <div class="buttons-container">
+                <input type="submit" class="btn" value="Google Search">
+                <button type="button" class="btn">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">India</div>
+        <div class="footer-bottom">
+            <div>
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+            </div>
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
